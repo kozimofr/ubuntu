@@ -15,7 +15,7 @@ sudo apt-get update -y
 DOCKER_VERSION=5:23.0.6-1~ubuntu.20.04~focal
 sudo apt-get install -y docker-ce=$DOCKER_VERSION docker-ce-cli=$DOCKER_VERSION containerd.io docker-buildx-plugin docker-compose-plugin
 sudo ln -s /usr/libexec/docker/cli-plugins/docker-compose /usr/bin/docker-compose
-sudo usermod -aG docker vagrant
+sudo usermod -aG docker ubuntu
 
 # MAKE
 # ------------------------------------------------------------------------------
